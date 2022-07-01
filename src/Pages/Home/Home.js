@@ -21,7 +21,7 @@ const Home = () => {
 
 
         const url = 'http://localhost:4000/todos';
-        const todo = { todoname };
+        var todo = { todoname, isCompleted: false };
 
 
 
@@ -45,8 +45,9 @@ const Home = () => {
         <div>
             <h1>Add Todos</h1>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Add Todo" class="input input-bordered w-full max-w-xs" name='todo' />
+                <input type="text" placeholder="Add Todo" class="input input-bordered w-full max-w-xs" name='todo' /><br />
                 <button className="btn btn-active mt-6 mb-6 btn-secondary w-full max-w-xs text-white">Add</button>
+                <br />
             </form>
             <h1>Todos</h1>
             {
