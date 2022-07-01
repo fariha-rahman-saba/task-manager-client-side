@@ -53,7 +53,7 @@ const Home = () => {
             {
                 todos.map(todo => <SingleTodo key={todo.id} todo={todo}></SingleTodo>)
             }
-            <Todo />
+
         </div>
     );
 };
