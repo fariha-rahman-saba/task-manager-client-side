@@ -10,7 +10,7 @@ const SingleTodo = ({ todo }) => {
 
     const handleEdit = () => {
         const updatedTodo = { todoname, isCompleted };
-        const url = "http://localhost:4000/todos/:id";
+        const url = "https://aqueous-bastion-20335.herokuapp.com/todos/:id";
 
         fetch(url, {
             method: 'PUT',

@@ -7,7 +7,7 @@ const Home = () => {
 
     const [todos, setTodos] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/todos')
+        fetch('https://aqueous-bastion-20335.herokuapp.com/todos')
             .then(res => res.json())
             .then(data => setTodos(data));
     }, []);
@@ -20,7 +20,7 @@ const Home = () => {
 
 
 
-        const url = 'http://localhost:4000/todos';
+        const url = 'https://aqueous-bastion-20335.herokuapp.com/todos';
         var todo = { todoname, isCompleted: false };
 
 
@@ -43,13 +43,13 @@ const Home = () => {
     return (
 
         <div>
-            <h1>Add Todos</h1>
+            <h1 className='text-3xl mt-6'>Add Todos</h1>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Add Todo" class="input input-bordered w-full max-w-xs" name='todo' /><br />
                 <button className="btn btn-active mt-6 mb-6 btn-secondary w-full max-w-xs text-white">Add</button>
                 <br />
             </form>
-            <h1>Todos</h1>
+            <h1 className='text-3xl mt-6'>Todos</h1>
             {
                 todos.map(todo => <SingleTodo key={todo.id} todo={todo}></SingleTodo>)
             }
