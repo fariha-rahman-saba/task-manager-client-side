@@ -3,7 +3,7 @@ import './styles/footer.css';
 
 const Footer = () => {
     return (
-        <p className='footer'>Copyright © {(new Date().getFullYear())}</p>
+        <p className='footer w-100 justify-center'>Copyright © {(new Date().getFullYear())}</p>
     );
 };
 

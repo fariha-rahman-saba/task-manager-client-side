@@ -45,8 +45,8 @@ const Home = () => {
         <div>
             <h1 className='text-3xl mt-6'>Add Todos</h1>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Add Todo" class="input input-bordered w-full max-w-xs" name='todo' /><br />
-                <button className="btn btn-active mt-6 mb-6 btn-secondary w-full max-w-xs text-white">Add</button>
+                <input type="text" placeholder="Add Todo" class="input input-bordered w-full max-w-xs" name='todo' />
+                <button className="btn btn-active mt-6 mb-6 ml-4 btn-secondary w-50 max-w-xs text-white">Add</button>
                 <br />
             </form>
             <h1 className='text-3xl mt-6'>Todos</h1>
